@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>go-zero redirect page</title>
+    <script type="text/javascript">
+      var t=2;
+      setInterval("refer()",1000); //启动1秒定时
+      function refer(){
+        if(t==0){
+          location="https://go-zero.dev"; //#设定跳转的链接地址
+        }
+        document.getElementById('show').innerHTML="将在"+t+"秒后跳转到新文档...";
+        t--;
+      }
+    </script>
+</head>
+<body>
+<h2>页面跳转...</h2>
+<h3><span id="show">将在3秒后跳转到新页面...</spn></h3>
+<h4>若未自动跳转，请<a href="https://go-zero.dev">点击此处</a>到新页面。<h4>
+</body>
+</html>
